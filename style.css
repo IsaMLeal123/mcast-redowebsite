@@ -1,0 +1,86 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables for the website */
+:root{
+    --primary: #7b4b2d;
+    --primary-tint: #b08265;
+    --primary-shade: #562e15;
+
+    --light: #ffffff;
+    --dark: #363029;
+
+    --muted:#dadada;
+    --muted-tint:#f4f2f2;
+    --muted-shade:#bababa;
+
+
+    --font-normal:"Roboto Condensed", Arial, sans-serif;
+
+    --spacing-0:0; /* 0px */
+    --spacing-1:0.5rem; /* 8px */
+    --spacing-2:1rem; /* 16px */
+    --spacing-3:2rem; /* 32px */
+
+    --shadow-dark: 0 0.1rem 0.2rem 0.1rem rgb(54, 48, 41, 0.2);
+    --shadow-light: 0 0.1rem 0.2rem 0.1rem rgb(255, 255, 255, 0.5);
+}
+
+/* CSS Reset */
+*{
+    box-sizing: border-box; /* Will force elements to scale from the border instead */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:var(--font-normal);
+    line-height: 1.5;
+}
+
+/***************************** BUTTONS *****************************/
+.btn {
+    border: none;
+    border-radius: var(--spacing-2);
+    padding: var(--spacing-1) var(--spacing-2);
+    cursor:pointer;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-tint);
+}
+
+.btn-primary:active{
+    background-color: var(--primary-shade);
+}
+
+.btn-secondary{
+    background-color: var(--muted);
+    color: var(--dark);
+}
+
+.btn-secondary:hover{
+    background-color: var(--muted-tint);
+}
+
+.btn-secondary:active{
+    background-color: var(--muted-shade);
+}
+
+.link{
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: var(--primary-tint);
+}
+
+.link{
+    color: var(--primary-shade);
+}
