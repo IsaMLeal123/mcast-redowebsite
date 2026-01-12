@@ -3,9 +3,9 @@
 
 /* Variables for the website */
 :root{
-    --primary: #7b4b2d;
-    --primary-tint: #b08265;
-    --primary-shade: #562e15;
+    --primary: #0e1040;
+    --primary-tint: #4ec5e0;
+    --primary-shade: #07082e;
 
     --light: #ffffff;
     --dark: #363029;
@@ -83,4 +83,8 @@ body{
 
 .link{
     color: var(--primary-shade);
+}
+
+header{
+    background-color: var(--primary);
 }
