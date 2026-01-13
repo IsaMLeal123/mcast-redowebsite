@@ -33,7 +33,7 @@
     padding: 0;
 }
 
-body{
+body {
     font-family:var(--font-normal);
     line-height: 1.5;
 }
@@ -43,10 +43,57 @@ a {
     text-decoration: none;
 }
 
-header{
+header {
     background-color: var(--primary);
 }
 
-a img {
-    height: 100%;
+.search-icon {
+    height: 48px;
+}
+
+nav {
+    justify-content: center; 
+}
+
+.flex{display: flex;}
+.flex-between{justify-content: space-between;}
+.flexcol{flex-direction: column;}
+.flex-expand{flex: 1;}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+/***************************** IMAGES *****************************/
+.logo {
+    display: block;
+    text-align: center;
+}
+.logo img {
+    height: 12rem;
+    margin-top: 1rem;
+}
+
+.search img {
+    height: 1.5rem;
+}
+
+/***************************** BUTTONS *****************************/
+.btn {
+    border: none;
+    padding: var(--spacing-1) var(--spacing-2);
+    cursor: pointer;
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--light);
+
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-tint);
 }
