@@ -39,7 +39,7 @@ body {
     background-color: var(--light);
 }
 
-a {
+header a{
     color: var(--light);
     text-decoration: none;
 }
@@ -67,6 +67,22 @@ nav {
 
 }
 
+/***************************** SPACING *****************************/
+.m-0{ margin:var(--space-0); }
+.m-1{ margin:var(--space-1); }
+.m-2{ margin:var(--space-2); }
+.m-3{ margin:var(--space-3); }
+
+.p-0{ padding:var(--space-0); }
+.p-1{ padding:var(--space-1); }
+.p-2{ padding:var(--space-2); }
+.p-3{ padding:var(--space-3); }
+
+.gap-0{ gap:var(--space-0); }
+.gap-1{ gap:var(--space-1); }
+.gap-2{ gap:var(--space-2); }
+.gap-3{ gap:var(--space-3); }
+
 /***************************** IMAGES INDEX*****************************/
 .logo {
     display: block;
@@ -84,7 +100,7 @@ nav {
 /***************************** BUTTONS *****************************/
 .btn {
     border: none;
-    padding: var(--space-1) var(--spacing-2);
+    padding: var(--space-1) var(--space-2);
     margin: var(--space-1);
     cursor: pointer;
     font-size: 1.5rem;
@@ -108,7 +124,7 @@ nav {
 }
 
 .carousel img{
-    height: 31em;
+    height: 30em;
     }
 
 .carousel-item{
@@ -142,3 +158,29 @@ nav {
 }
 
 /***************************** NEWS SECTION OF HOME PAGE *****************************/
+
+.news-section{
+    width: 100%;
+    margin-top: var(--space-3);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: var(--space-3);
+    margin: 25px auto;
+}
+
+.card a {
+    color: var(--primary);
+}
+
+.cards .card{
+    width: 100%;
+    position: relative;
+}
+
+.image-news-section img{
+    width: 300px;
+    height: 300px;
+}
