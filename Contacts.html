@@ -18,17 +18,70 @@
                 <button class="btn btn-primary"><a href="institutes.html">Courses</a></button>
                 <button class="btn btn-primary"><a href="#" class="search"> <img src="images/Search-IconWhite.png" alt="search"></a></button>
         </nav>    
-
-        <section class="carousel">
-            <div class="carousel-item"><img src="images/banner-1.jpg" alt="banner-1"></div>
-            <div class="carousel-item"><img src="images/banner-2.png" alt="banner-2"></div>
-            <div class="carousel-item"><img src="images/banner-3.png" alt="banner-3"></div>
-        </section>
     </header>
     
-    <main>
+    <main class="container">
+
+        <h2 class="justify">Get in Contact with:</h2>
+        <Section class="buttons-image">
+
+            <div class="button-list">
+                <button class="btn btn-secondary">Institutes</button>
+                <button class="btn btn-secondary">Admissions Office</button>
+                <button class="btn btn-secondary">Registrar/Records</button>
+                <button class="btn btn-secondary">Finances Office</button>
+                <button class="btn btn-secondary">IT Support</button>
+                <button class="btn btn-secondary">Student Support</button>
+                <button class="btn btn-secondary">Career Guidance</button>
+            </div>
+
+            <div>
+                <img src="images/students-img.jpeg" alt="students">
+            </div>
+
+        </Section>
+
+
+        <section class="contact-container">
+            
+            <form action="mailto:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
+            
+                <div>
+                    <label for="input-topic">Get in touch with:</label>
+                    <select name="topic" id="input-topic" required>
+                        <option value="" disabled selected> Choose an topic</option>
+                        <option value="I love coffee">I love coffee</option>
+                        <option value="I hate coffee">I hate coffee</option>
+                    </select>
+                </div>
+        
+        
+                <div>
+                    <label for="input-name">Name:</label>
+                    <input type="text" name="name" id="input-name" placeholder="Isabelle Leal" required minlength="8">
+                </div>
+            
+                <div>
+                    <label for="input-email">Email:</label>
+                    <input type="email" name="email" id="input-email" placeholder="email@example.com" required>
+                </div>
+        
+                <div>
+                    <label for="input-message"> Your Message:</label>
+                    <textarea name="Message" id="input-message" placeholder="Your message here..." cols="30" rows="10" required minlength="20"></textarea>
+                </div>
+        
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </form>
+
+        </section>
+
+
 
     </main>
-    <script src="main.js"></script>
-</body>
+
+
+    <!-- <div class="bottom-color"></div> -->
+    </body>
 </html>
