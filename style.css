@@ -253,6 +253,8 @@ nav {
 .buttons-image img{
     width: 50rem;
     height: auto;
+    border: 5px solid --light;
+    box-shadow: var(--shadow-dark);
 }
 
 .break{
@@ -287,6 +289,8 @@ nav {
     resize: none;
 }
 
+/***************************** INSTITUTES PAGE *****************************/
+
 .contact-form div{
     margin: var(--spacing-1) 0;
 }
@@ -311,4 +315,48 @@ nav {
 
 .search-input::placeholder, .search-icon{
     color: var(--muted-shade);
+}
+
+.btn-secondary a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+/***************************** SELECTED INSTITUTE *****************************/
+
+
+.summary img{
+    height: 30rem;
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
+    border: 5px solid --light;
+    box-shadow: var(--shadow-dark);
+}
+
+.summary p{
+    margin-top: var(--space-1);
+    margin-bottom: var(--space-1);
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.courses-table h2{
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+th{
+    font-size: 20px;
+}
+td{
+    border: 2px solid var(--primary);
+    padding: var(--space-1);
+}
+.description{
+    width: 50%;
 }
